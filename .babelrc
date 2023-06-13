@@ -1,0 +1,16 @@
+{
+ "presets": ["next/babel"],
+ "plugins": [
+  ["@babel/plugin-proposal-do-expressions"], 
+  ["module-resolver", {
+     "alias": {
+       "@contexts/*": "./src/contexts",
+       "@components/*": "./src/components",
+       "@hooks/*": "./src/hooks",
+       "@pages/*": "./src/pages",
+       "@services/*": "./src/services",
+       "@utils/*": "./src/utils"
+     }
+  }]
+ ]
+}
